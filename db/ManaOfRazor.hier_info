@@ -1,0 +1,1415 @@
+|ManaPlasmaField
+F <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+CLR => Cooldown_block:inst1.CLR
+CLR => Mana_Block:inst.CLR
+CLK => Cooldown_block:inst1.CLK
+CLK => Mana_Block:inst.CLK
+use1 => inst7.IN1
+
+
+|ManaPlasmaField|SoSanh5bits:inst3
+AlonhonB <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sub5bits:inst.A[0]
+A[1] => Sub5bits:inst.A[1]
+A[2] => Sub5bits:inst.A[2]
+A[3] => Sub5bits:inst.A[3]
+A[4] => Sub5bits:inst.A[4]
+B[0] => Sub5bits:inst.B[0]
+B[1] => Sub5bits:inst.B[1]
+B[2] => Sub5bits:inst.B[2]
+B[3] => Sub5bits:inst.B[3]
+B[4] => Sub5bits:inst.B[4]
+
+
+|ManaPlasmaField|SoSanh5bits:inst3|Sub5bits:inst
+S5 <= Sub1bits:inst5.Bout
+A[0] => Sub1bits:inst.B
+A[1] => Sub1bits:inst1.B
+A[2] => Sub1bits:inst3.B
+A[3] => Sub1bits:inst4.B
+A[4] => Sub1bits:inst5.B
+B[0] => Sub1bits:inst.Bin
+B[1] => Sub1bits:inst1.Bin
+B[2] => Sub1bits:inst3.Bin
+B[3] => Sub1bits:inst4.Bin
+B[4] => Sub1bits:inst5.Bin
+S[0] <= Sub1bits:inst.D
+S[1] <= Sub1bits:inst1.D
+S[2] <= Sub1bits:inst3.D
+S[3] <= Sub1bits:inst4.D
+S[4] <= Sub1bits:inst5.D
+
+
+|ManaPlasmaField|SoSanh5bits:inst3|Sub5bits:inst|Sub1bits:inst5
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst3|Sub5bits:inst|Sub1bits:inst4
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst3|Sub5bits:inst|Sub1bits:inst3
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst3|Sub5bits:inst|Sub1bits:inst1
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst3|Sub5bits:inst|Sub1bits:inst
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1
+Q[0] <= Res5bits:inst.Q[0]
+Q[1] <= Res5bits:inst.Q[1]
+Q[2] <= Res5bits:inst.Q[2]
+Q[3] <= Res5bits:inst.Q[3]
+Q[4] <= Res5bits:inst.Q[4]
+CLR => Res5bits:inst.CLR
+CLK => Res5bits:inst.CLK
+use1 => Mux5to1:inst4.Sel
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Res5bits:inst
+Q[0] <= ffd:inst.Q
+Q[1] <= ffd:inst1.Q
+Q[2] <= ffd:inst2.Q
+Q[3] <= ffd:inst3.Q
+Q[4] <= ffd:inst4.Q
+D[0] => ffd:inst.D
+D[1] => ffd:inst1.D
+D[2] => ffd:inst2.D
+D[3] => ffd:inst3.D
+D[4] => ffd:inst4.D
+CLK => ffd:inst.CLK
+CLK => ffd:inst1.CLK
+CLK => ffd:inst2.CLK
+CLK => ffd:inst3.CLK
+CLK => ffd:inst4.CLK
+CLR => ffd:inst.CLR
+CLR => ffd:inst1.CLR
+CLR => ffd:inst2.CLR
+CLR => ffd:inst3.CLR
+CLR => ffd:inst4.CLR
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Res5bits:inst|ffd:inst
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Res5bits:inst|ffd:inst1
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Res5bits:inst|ffd:inst2
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Res5bits:inst|ffd:inst3
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Res5bits:inst|ffd:inst4
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst4
+O[0] <= MUX2_1bits:inst2.Y
+O[1] <= MUX2_1bits:inst4.Y
+O[2] <= MUX2_1bits:inst1.Y
+O[3] <= MUX2_1bits:inst3.Y
+O[4] <= MUX2_1bits:inst.Y
+Sel => MUX2_1bits:inst.Sel
+Sel => MUX2_1bits:inst3.Sel
+Sel => MUX2_1bits:inst1.Sel
+Sel => MUX2_1bits:inst4.Sel
+Sel => MUX2_1bits:inst2.Sel
+B[0] => MUX2_1bits:inst2.I1
+B[1] => MUX2_1bits:inst4.I1
+B[2] => MUX2_1bits:inst1.I1
+B[3] => MUX2_1bits:inst3.I1
+B[4] => MUX2_1bits:inst.I1
+A[0] => MUX2_1bits:inst2.I0
+A[1] => MUX2_1bits:inst4.I0
+A[2] => MUX2_1bits:inst1.I0
+A[3] => MUX2_1bits:inst3.I0
+A[4] => MUX2_1bits:inst.I0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst4|MUX2_1bits:inst
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst4|MUX2_1bits:inst3
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst4|MUX2_1bits:inst1
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst4|MUX2_1bits:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst4|MUX2_1bits:inst2
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst3
+O[0] <= MUX2_1bits:inst2.Y
+O[1] <= MUX2_1bits:inst4.Y
+O[2] <= MUX2_1bits:inst1.Y
+O[3] <= MUX2_1bits:inst3.Y
+O[4] <= MUX2_1bits:inst.Y
+Sel => MUX2_1bits:inst.Sel
+Sel => MUX2_1bits:inst3.Sel
+Sel => MUX2_1bits:inst1.Sel
+Sel => MUX2_1bits:inst4.Sel
+Sel => MUX2_1bits:inst2.Sel
+B[0] => MUX2_1bits:inst2.I1
+B[1] => MUX2_1bits:inst4.I1
+B[2] => MUX2_1bits:inst1.I1
+B[3] => MUX2_1bits:inst3.I1
+B[4] => MUX2_1bits:inst.I1
+A[0] => MUX2_1bits:inst2.I0
+A[1] => MUX2_1bits:inst4.I0
+A[2] => MUX2_1bits:inst1.I0
+A[3] => MUX2_1bits:inst3.I0
+A[4] => MUX2_1bits:inst.I0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst3|MUX2_1bits:inst
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst3|MUX2_1bits:inst3
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst3|MUX2_1bits:inst1
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst3|MUX2_1bits:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Mux5to1:inst3|MUX2_1bits:inst2
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|SoSanh5bits:inst2
+AlonhonB <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sub5bits:inst.A[0]
+A[1] => Sub5bits:inst.A[1]
+A[2] => Sub5bits:inst.A[2]
+A[3] => Sub5bits:inst.A[3]
+A[4] => Sub5bits:inst.A[4]
+B[0] => Sub5bits:inst.B[0]
+B[1] => Sub5bits:inst.B[1]
+B[2] => Sub5bits:inst.B[2]
+B[3] => Sub5bits:inst.B[3]
+B[4] => Sub5bits:inst.B[4]
+
+
+|ManaPlasmaField|Cooldown_block:inst1|SoSanh5bits:inst2|Sub5bits:inst
+S5 <= Sub1bits:inst5.Bout
+A[0] => Sub1bits:inst.B
+A[1] => Sub1bits:inst1.B
+A[2] => Sub1bits:inst3.B
+A[3] => Sub1bits:inst4.B
+A[4] => Sub1bits:inst5.B
+B[0] => Sub1bits:inst.Bin
+B[1] => Sub1bits:inst1.Bin
+B[2] => Sub1bits:inst3.Bin
+B[3] => Sub1bits:inst4.Bin
+B[4] => Sub1bits:inst5.Bin
+S[0] <= Sub1bits:inst.D
+S[1] <= Sub1bits:inst1.D
+S[2] <= Sub1bits:inst3.D
+S[3] <= Sub1bits:inst4.D
+S[4] <= Sub1bits:inst5.D
+
+
+|ManaPlasmaField|Cooldown_block:inst1|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst5
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst4
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst3
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst1
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1
+S5 <= Fulladder1bit:inst6.Carry
+A[0] => Fulladder1bit:inst.A
+A[1] => Fulladder1bit:inst2.A
+A[2] => Fulladder1bit:inst4.A
+A[3] => Fulladder1bit:inst5.A
+A[4] => Fulladder1bit:inst6.A
+B[0] => Fulladder1bit:inst.B
+B[1] => Fulladder1bit:inst2.B
+B[2] => Fulladder1bit:inst4.B
+B[3] => Fulladder1bit:inst5.B
+B[4] => Fulladder1bit:inst6.B
+S[0] <= Fulladder1bit:inst.Sum
+S[1] <= Fulladder1bit:inst2.Sum
+S[2] <= Fulladder1bit:inst4.Sum
+S[3] <= Fulladder1bit:inst5.Sum
+S[4] <= Fulladder1bit:inst6.Sum
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst6
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst6|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst6|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst5
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst5|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst5|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst4
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst4|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst4|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst2
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst2|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst2|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Cooldown_block:inst1|Fulladder5bit:inst1|Fulladder1bit:inst|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Cooldown_block:inst1|lpm_constant3:inst5
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|ManaPlasmaField|Cooldown_block:inst1|lpm_constant3:inst5|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+
+
+|ManaPlasmaField|Cooldown_block:inst1|lpm_constant4:inst6
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|ManaPlasmaField|Cooldown_block:inst1|lpm_constant4:inst6|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+
+
+|ManaPlasmaField|lpm_constant4:inst4
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|ManaPlasmaField|lpm_constant4:inst4|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+
+
+|ManaPlasmaField|SoSanh5bits:inst2
+AlonhonB <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sub5bits:inst.A[0]
+A[1] => Sub5bits:inst.A[1]
+A[2] => Sub5bits:inst.A[2]
+A[3] => Sub5bits:inst.A[3]
+A[4] => Sub5bits:inst.A[4]
+B[0] => Sub5bits:inst.B[0]
+B[1] => Sub5bits:inst.B[1]
+B[2] => Sub5bits:inst.B[2]
+B[3] => Sub5bits:inst.B[3]
+B[4] => Sub5bits:inst.B[4]
+
+
+|ManaPlasmaField|SoSanh5bits:inst2|Sub5bits:inst
+S5 <= Sub1bits:inst5.Bout
+A[0] => Sub1bits:inst.B
+A[1] => Sub1bits:inst1.B
+A[2] => Sub1bits:inst3.B
+A[3] => Sub1bits:inst4.B
+A[4] => Sub1bits:inst5.B
+B[0] => Sub1bits:inst.Bin
+B[1] => Sub1bits:inst1.Bin
+B[2] => Sub1bits:inst3.Bin
+B[3] => Sub1bits:inst4.Bin
+B[4] => Sub1bits:inst5.Bin
+S[0] <= Sub1bits:inst.D
+S[1] <= Sub1bits:inst1.D
+S[2] <= Sub1bits:inst3.D
+S[3] <= Sub1bits:inst4.D
+S[4] <= Sub1bits:inst5.D
+
+
+|ManaPlasmaField|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst5
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst4
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst3
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst1
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|SoSanh5bits:inst2|Sub5bits:inst|Sub1bits:inst
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst
+Q[0] <= Res5bits:inst.Q[0]
+Q[1] <= Res5bits:inst.Q[1]
+Q[2] <= Res5bits:inst.Q[2]
+Q[3] <= Res5bits:inst.Q[3]
+Q[4] <= Res5bits:inst.Q[4]
+CLR => Res5bits:inst.CLR
+CLK => Res5bits:inst.CLK
+use1 => Mux5to1:inst13.Sel
+
+
+|ManaPlasmaField|Mana_Block:inst|Res5bits:inst
+Q[0] <= ffd:inst.Q
+Q[1] <= ffd:inst1.Q
+Q[2] <= ffd:inst2.Q
+Q[3] <= ffd:inst3.Q
+Q[4] <= ffd:inst4.Q
+D[0] => ffd:inst.D
+D[1] => ffd:inst1.D
+D[2] => ffd:inst2.D
+D[3] => ffd:inst3.D
+D[4] => ffd:inst4.D
+CLK => ffd:inst.CLK
+CLK => ffd:inst1.CLK
+CLK => ffd:inst2.CLK
+CLK => ffd:inst3.CLK
+CLK => ffd:inst4.CLK
+CLR => ffd:inst.CLR
+CLR => ffd:inst1.CLR
+CLR => ffd:inst2.CLR
+CLR => ffd:inst3.CLR
+CLR => ffd:inst4.CLR
+
+
+|ManaPlasmaField|Mana_Block:inst|Res5bits:inst|ffd:inst
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Res5bits:inst|ffd:inst1
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Res5bits:inst|ffd:inst2
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Res5bits:inst|ffd:inst3
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Res5bits:inst|ffd:inst4
+Q <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PR => inst9.IN0
+PR => inst4.IN0
+PR => inst1.IN0
+CLK => inst3.IN0
+D => inst.IN0
+D => inst2.IN0
+CLR => inst.IN1
+CLR => inst6.IN2
+CLR => inst7.IN2
+QN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst13
+O[0] <= MUX2_1bits:inst2.Y
+O[1] <= MUX2_1bits:inst4.Y
+O[2] <= MUX2_1bits:inst1.Y
+O[3] <= MUX2_1bits:inst3.Y
+O[4] <= MUX2_1bits:inst.Y
+Sel => MUX2_1bits:inst.Sel
+Sel => MUX2_1bits:inst3.Sel
+Sel => MUX2_1bits:inst1.Sel
+Sel => MUX2_1bits:inst4.Sel
+Sel => MUX2_1bits:inst2.Sel
+B[0] => MUX2_1bits:inst2.I1
+B[1] => MUX2_1bits:inst4.I1
+B[2] => MUX2_1bits:inst1.I1
+B[3] => MUX2_1bits:inst3.I1
+B[4] => MUX2_1bits:inst.I1
+A[0] => MUX2_1bits:inst2.I0
+A[1] => MUX2_1bits:inst4.I0
+A[2] => MUX2_1bits:inst1.I0
+A[3] => MUX2_1bits:inst3.I0
+A[4] => MUX2_1bits:inst.I0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst13|MUX2_1bits:inst
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst13|MUX2_1bits:inst3
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst13|MUX2_1bits:inst1
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst13|MUX2_1bits:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst13|MUX2_1bits:inst2
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst10
+O[0] <= MUX2_1bits:inst2.Y
+O[1] <= MUX2_1bits:inst4.Y
+O[2] <= MUX2_1bits:inst1.Y
+O[3] <= MUX2_1bits:inst3.Y
+O[4] <= MUX2_1bits:inst.Y
+Sel => MUX2_1bits:inst.Sel
+Sel => MUX2_1bits:inst3.Sel
+Sel => MUX2_1bits:inst1.Sel
+Sel => MUX2_1bits:inst4.Sel
+Sel => MUX2_1bits:inst2.Sel
+B[0] => MUX2_1bits:inst2.I1
+B[1] => MUX2_1bits:inst4.I1
+B[2] => MUX2_1bits:inst1.I1
+B[3] => MUX2_1bits:inst3.I1
+B[4] => MUX2_1bits:inst.I1
+A[0] => MUX2_1bits:inst2.I0
+A[1] => MUX2_1bits:inst4.I0
+A[2] => MUX2_1bits:inst1.I0
+A[3] => MUX2_1bits:inst3.I0
+A[4] => MUX2_1bits:inst.I0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst10|MUX2_1bits:inst
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst10|MUX2_1bits:inst3
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst10|MUX2_1bits:inst1
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst10|MUX2_1bits:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Mux5to1:inst10|MUX2_1bits:inst2
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+I0 => inst1.IN0
+Sel => inst3.IN0
+Sel => inst.IN1
+I1 => inst.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|SoSanh5bits:inst8
+AlonhonB <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sub5bits:inst.A[0]
+A[1] => Sub5bits:inst.A[1]
+A[2] => Sub5bits:inst.A[2]
+A[3] => Sub5bits:inst.A[3]
+A[4] => Sub5bits:inst.A[4]
+B[0] => Sub5bits:inst.B[0]
+B[1] => Sub5bits:inst.B[1]
+B[2] => Sub5bits:inst.B[2]
+B[3] => Sub5bits:inst.B[3]
+B[4] => Sub5bits:inst.B[4]
+
+
+|ManaPlasmaField|Mana_Block:inst|SoSanh5bits:inst8|Sub5bits:inst
+S5 <= Sub1bits:inst5.Bout
+A[0] => Sub1bits:inst.B
+A[1] => Sub1bits:inst1.B
+A[2] => Sub1bits:inst3.B
+A[3] => Sub1bits:inst4.B
+A[4] => Sub1bits:inst5.B
+B[0] => Sub1bits:inst.Bin
+B[1] => Sub1bits:inst1.Bin
+B[2] => Sub1bits:inst3.Bin
+B[3] => Sub1bits:inst4.Bin
+B[4] => Sub1bits:inst5.Bin
+S[0] <= Sub1bits:inst.D
+S[1] <= Sub1bits:inst1.D
+S[2] <= Sub1bits:inst3.D
+S[3] <= Sub1bits:inst4.D
+S[4] <= Sub1bits:inst5.D
+
+
+|ManaPlasmaField|Mana_Block:inst|SoSanh5bits:inst8|Sub5bits:inst|Sub1bits:inst5
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|SoSanh5bits:inst8|Sub5bits:inst|Sub1bits:inst4
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|SoSanh5bits:inst8|Sub5bits:inst|Sub1bits:inst3
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|SoSanh5bits:inst8|Sub5bits:inst|Sub1bits:inst1
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|SoSanh5bits:inst8|Sub5bits:inst|Sub1bits:inst
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1
+S5 <= Fulladder1bit:inst6.Carry
+A[0] => Fulladder1bit:inst.A
+A[1] => Fulladder1bit:inst2.A
+A[2] => Fulladder1bit:inst4.A
+A[3] => Fulladder1bit:inst5.A
+A[4] => Fulladder1bit:inst6.A
+B[0] => Fulladder1bit:inst.B
+B[1] => Fulladder1bit:inst2.B
+B[2] => Fulladder1bit:inst4.B
+B[3] => Fulladder1bit:inst5.B
+B[4] => Fulladder1bit:inst6.B
+S[0] <= Fulladder1bit:inst.Sum
+S[1] <= Fulladder1bit:inst2.Sum
+S[2] <= Fulladder1bit:inst4.Sum
+S[3] <= Fulladder1bit:inst5.Sum
+S[4] <= Fulladder1bit:inst6.Sum
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst6
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst6|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst6|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst5
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst5|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst5|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst4
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst4|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst4|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst2
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst2|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst2|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst
+Sum <= Sum:inst3.Sum
+Cin => Sum:inst3.Cin
+Cin => Biencarry:inst.Cin
+A => Sum:inst3.A
+A => Biencarry:inst.A
+B => Sum:inst3.B
+B => Biencarry:inst.B
+Carry <= Biencarry:inst.Carry
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst|Sum:inst3
+Sum <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst5.IN0
+Cin => inst2.IN0
+Cin => inst3.IN0
+Cin => inst7.IN0
+A => inst6.IN0
+A => inst9.IN0
+A => inst3.IN1
+A => inst1.IN1
+B => inst.IN2
+B => inst10.IN0
+B => inst3.IN2
+B => inst8.IN0
+
+
+|ManaPlasmaField|Mana_Block:inst|Fulladder5bit:inst1|Fulladder1bit:inst|Biencarry:inst
+Carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst.IN0
+B => inst1.IN1
+B => inst2.IN1
+A => inst2.IN0
+A => inst.IN1
+
+
+|ManaPlasmaField|Mana_Block:inst|lpm_constant0:inst7
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|ManaPlasmaField|Mana_Block:inst|lpm_constant0:inst7|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+
+
+|ManaPlasmaField|Mana_Block:inst|lpm_constant1:inst9
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|ManaPlasmaField|Mana_Block:inst|lpm_constant1:inst9|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+
+
+|ManaPlasmaField|Mana_Block:inst|Sub5bits:inst11
+S5 <= Sub1bits:inst5.Bout
+A[0] => Sub1bits:inst.B
+A[1] => Sub1bits:inst1.B
+A[2] => Sub1bits:inst3.B
+A[3] => Sub1bits:inst4.B
+A[4] => Sub1bits:inst5.B
+B[0] => Sub1bits:inst.Bin
+B[1] => Sub1bits:inst1.Bin
+B[2] => Sub1bits:inst3.Bin
+B[3] => Sub1bits:inst4.Bin
+B[4] => Sub1bits:inst5.Bin
+S[0] <= Sub1bits:inst.D
+S[1] <= Sub1bits:inst1.D
+S[2] <= Sub1bits:inst3.D
+S[3] <= Sub1bits:inst4.D
+S[4] <= Sub1bits:inst5.D
+
+
+|ManaPlasmaField|Mana_Block:inst|Sub5bits:inst11|Sub1bits:inst5
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Sub5bits:inst11|Sub1bits:inst4
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Sub5bits:inst11|Sub1bits:inst3
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Sub5bits:inst11|Sub1bits:inst1
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|Sub5bits:inst11|Sub1bits:inst
+Bout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+B => inst.IN0
+Bin => inst1.IN1
+Bin => inst.IN1
+A => inst4.IN1
+A => inst99.IN0
+D <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ManaPlasmaField|Mana_Block:inst|lpm_constant2:inst12
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|ManaPlasmaField|Mana_Block:inst|lpm_constant2:inst12|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+
+
+|ManaPlasmaField|lpm_constant2:inst5
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
+result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
+result[4] <= lpm_constant:LPM_CONSTANT_component.result[4]
+
+
+|ManaPlasmaField|lpm_constant2:inst5|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+
+
